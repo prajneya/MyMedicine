@@ -24,7 +24,9 @@ To run the CLI, change your directory to the cloned folder and run the following
 $ python3 MyMedicine.py
 ```
 
-`Please Note: If you are using Docker to run MySQL, you might need to first change your port to 5005 (or the port you use) by replacing the following lines for connecting the database in the MyMedicine.py file: `
+``` diff
+- Please Note: If you are using Docker to run MySQL, you might need to first change your port to 5005 (or the port you use) by replacing the following lines for connecting the database in the MyMedicine.py file: 
+```
 
 ```sh
 con = pymysql.connect(host='localhost',
