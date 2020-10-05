@@ -6,7 +6,21 @@ This repository is an attempt to create a mini world of “MyMedicine - An Onlin
 
 The CLI version for the same can be run by cloning this repo.
 
-### Steps to Run
+### Requirements
+
+* Python3
+```sh
+$ sudo apt-get update
+$ sudo apt-get install python3.6
+```
+* MySQL
+* PyMySQL
+```sh
+$ sudo apt-get install python3-pip
+$ pip3 install pymysql
+```
+
+### Installation
 
 You will need to replicate the MyMedicine Databse on your local machine, for which the dump.sql file is provided herewith.
 
@@ -45,4 +59,41 @@ con = pymysql.connect(host='localhost',
 
 near lines 1086-1090.
 
+### Steps to Run
 
+You will be first prompted to enter your MySQL Username and Password as follows:
+
+```sh
+Enter username and password to access the database.
+Username: 
+Password:
+```
+
+You will now be redirected to the Login/Signup Page.
+
+The following are some sample credentials for you to login (although you can create yours too from the CLI):
+
+* Admin
+```sh
+Email-Id: prajneya@admin.com 
+Password: 1234
+```
+* Customer
+```sh
+Email-Id: prajneya@customer.com 
+Password: 1234
+```
+* Manager
+```sh
+Email-Id: prajneya1@manager.com 
+Password: 1234
+```
+```sh
+Email-Id: prajneya2@manager.com 
+Password: 1234
+```
+```sh
+Email-Id: prajneya3@manager.com 
+Password: 1234
+```
+Happy Shopping!
