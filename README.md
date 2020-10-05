@@ -10,6 +10,12 @@ The CLI version for the same can be run by cloning this repo.
 
 You will need to replicate the MyMedicine Databse on your local machine, for which the dump.sql file is provided herewith.
 
+Open your MySQL server and create the following database:
+
+```sh
+$ mysql> CREATE DATABASE MYMEDICINE;
+```
+
 Run the following command to import the database:
 
 ```sh
