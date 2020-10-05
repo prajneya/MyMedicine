@@ -2,8 +2,6 @@
 
 [![N|Solid](https://i.imgur.com/UuM5YMF.png)](https://nodesource.com/products/nsolid)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/prajneya/MyMedicine)
-
 This repository is an attempt to create a mini world of “MyMedicine - An Online Pharmacy Management System”.  It is a system that stores data and enables functionality that allows users to buy medicines via an online network.  To be precise, pharmacy management system is an internet-based vendor that sells medicines and allowsusers an option to buy from their mobile, laptop etc. 
 
 The CLI version for the same can be run by cloning this repo.
