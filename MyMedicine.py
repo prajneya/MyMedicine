@@ -125,7 +125,8 @@ def browseProducts(user):
         ch = input("Enter medicine ID to add product to cart or go back> ")
         tmp = sp.call('clear', shell=True)
 
-        if(ch==count):
+        if(ch==str(count)):
+            tmp = sp.call('clear', shell=True)
             customerDashboard(user)
         else:
             addToCart(user, ch)
@@ -710,7 +711,11 @@ def updateOrder(user):
         for row in rows:
             print(row['Order_id'])
 
-        order_id = input("Enter Order_id to Edit> ")
+        order_id = input("Enter Order_id to Edit or 999 to go back> ")
+
+        if(order_id==str(999)):
+            tmp = sp.call('clear', shell=True)
+            employeeDashboard(user)
 
         query = "SELECT * FROM ORDER_REQUEST WHERE Order_id='"+order_id+"'"
         cur.execute(query)
@@ -769,7 +774,11 @@ def updateTransaction(user):
         for row in rows:
             print(row['Transaction_id'])
 
-        transaction_id = input("Enter Transaction_id to Edit> ")
+        transaction_id = input("Enter Transaction_id to Edit or 999 to go back> ")
+
+        if(transaction_id==str(999)):
+            tmp = sp.call('clear', shell=True)
+            employeeDashboard(user)
 
         query = "SELECT * FROM TRANSACTION WHERE Transaction_id='"+transaction_id+"'"
         cur.execute(query)
@@ -824,7 +833,11 @@ def removeEmployee(user):
             for row in rows:
                 print(row['User_id'], "--", row['First_name'], row['Last_Name'])
 
-            emp_id = input("Enter Employee Id to fire: ")
+            emp_id = input("Enter Employee Id to fire or 999 to go back: ")
+
+            if(emp_id==str(999)):
+                tmp = sp.call('clear', shell=True)
+                employeeDashboard(user)
 
             confirm = input("You are going to fire "+emp_id+". Are you sure? (Y/N)")
 
